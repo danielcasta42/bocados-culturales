@@ -1,0 +1,172 @@
+header {
+    display: flex;
+    align-items: center; 
+    background-color: #223d15;
+  }
+    header img {
+        width: 50px; 
+        height: auto; 
+        margin-right: 20px; 
+  }
+  nav {
+    flex: 2; 
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+    display: flex; 
+    justify-content: space-around;
+  }
+
+  nav a {
+    color: #ffffff; /* Cambia el color del texto dentro de nav */
+    text-decoration: none; /* Opcional: elimina el subrayado de los enlaces */
+  }
+
+  nav a:hover {
+    color: #85d819; /* Cambia el color al pasar el cursor */
+  }
+  .sidebar {
+  position: fixed;
+    padding: 10px;
+    width: 200px; 
+    height: 100%; 
+  }
+
+.banner {
+    background-color: #396e0d;
+    height:300px; /* Ajusta la altura del banner */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .banner-content {
+    text-align: center;
+  }
+  
+  .banner-content h1 {
+    font-size: 2.5em;
+    color: white;
+    margin: 0;
+  }
+  .banner-content h2 {
+    font-size: 2em;
+    color: rgb(255, 255, 255);
+    margin-top: 0px;
+    margin-bottom: 40px;
+  }
+  .banner-content a {
+    background-color: rgba(0, 0, 0, 0.5); /* Transparente con sombreado */
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.slider-box {
+    width: 1280px;
+    height: auto;
+    margin: 50px auto;
+    overflow: hidden;
+}
+.slider-box ul {
+    display: flex;
+    padding: 0%;
+    width: 400%;
+    animation: slide 10s infinite alternate ease-in-out;
+}
+.slider-box li {
+    width: 100%;
+    list-style: none;
+   position: relative;
+}
+.texto {
+  position: absolute;
+  text-align: center;
+  padding: 0 250px;
+  top: 250px;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.texto h2 {
+  font-size: 55px;
+  margin-bottom: 35px;
+}
+.slider-box img {
+    width: 100%;
+}
+@keyframes slide {
+  0% {margin-left: 0%;}
+  20% {margin-left: 0%;}
+  25% {margin-left: -100%;}
+  45% {margin-left: -100%;}
+  50% {margin-left: -200%;}
+  70% {margin-left: -200%;}
+  75% {margin-left: -300%;}
+  100% {margin-left: -300%;}
+}
+@media (max-width:991px) {
+  body {
+    padding: 30px;
+  }
+  .slider-box {
+    width: 100%;
+  }
+}
+.texto {
+  top: 50px;
+  padding: 0 25px;
+}
+.texto h2 {
+  font-size: 35px;
+  margin-bottom: 15px;
+
+}
+.texto p {
+  font-size: 25px;
+  margin-bottom: 15px;
+  color: rgb(255, 255, 255);
+  text-shadow: 8px 8px 10px rgb(0, 0, 0);
+  background-color: rgba(136, 106, 60, 0.5); /* Transparente con sombreado */
+}
+body {
+  background-color: #b8a570; /* Cambia el color hexadecimal al que desees */
+}
+footer {
+    background-color: #223d15;
+    color: #ffffff; /* Cambia el color del texto dentro de footer */
+    text-align: center;
+    padding: 8px 0;
+    bottom: 0;
+    width: 100%;
+  }
+  footer a {
+    color: #ffffff; /* Cambia el color del texto dentro de footer */
+    text-decoration: none; /* Opcional: elimina el subrayado de los enlaces */
+  }
+  .contenedor-cuadricula {
+    display: grid; /* Activa el grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ajusta el número de columnas automáticamente */
+    gap: 20px; /* Espacio entre las celdas */
+    padding: 20px;
+  }
+  
+  .elemento-cuadricula {
+    padding: 20px;
+    text-align: center;
+    border: 1px solid black; /* Borde de los elementos */
+  }
+
+.contenedor-cuadricula div {
+    text-align: center;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contenedor-cuadricula img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
